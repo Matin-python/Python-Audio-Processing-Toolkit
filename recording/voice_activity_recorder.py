@@ -1,6 +1,6 @@
 """
-Record your voice since you start speaking until you stop speaking for 3 seconds.
-Then it playback
+Record your voice from the moment you start speaking until you stop speaking for 3 seconds.
+Then it plays back.
 """
 import pyaudio
 import numpy as np
