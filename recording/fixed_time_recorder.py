@@ -1,6 +1,6 @@
 """
-Record your voice for 5 seconds and save it
-You can change the duration of recording.
+Record your voice for 5 seconds and save it.
+You can change the duration of the recording.
 """
 import pyaudio
 import wave
