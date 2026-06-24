@@ -1,6 +1,6 @@
 """
-Record your voice for 5 seconds and do some processing on your voice and plot it.
-You can change the duration of recording.
+Record your voice for 5 seconds, do some processing on your voice, and plot it.
+You can change the duration of the recording.
 """
 import pyaudio
 import numpy as np
