@@ -2,6 +2,7 @@
 Record your voice for 5 seconds and save it.
 You can change the duration of the recording.
 """
+
 import pyaudio
 import wave
 import numpy as np
@@ -24,10 +25,11 @@ stream = p.open(
 )
 
 print ('Start Recording...')
-au = np.array([])
+frames = []
 for i in range (int(TIME_OF_RECORDING * SAMPLE_RATE/CHUNK)):
     data = np.frombuffer(stream.read(CHUNK), dtype= np.int16)
-    au = np.append(au, data)
+    frames.append(data)
+au = np.concatenate(frames)
 print ('END')
 
 plt.plot(au)
@@ -55,9 +57,11 @@ output = p.open(
     frames_per_buffer= CHUNK
 )
 
-data_out = np.chararray.tostring(au.astype(np.int16))
-output.write(data_out)
-
+data_out = au.astype(np.int16).tobytes()
+output.write(au.tobytes())
+output.stop_stream()
+output.close()
+p.terminate()
 
 sample_width = p.get_sample_size(pyaudio.paInt16)
 wf = wave.open('test.wav', 'wb')
