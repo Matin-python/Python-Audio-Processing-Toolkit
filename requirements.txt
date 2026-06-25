@@ -1,5 +1,5 @@
-pyaudio
+PyAudio
 numpy
-wave
-scipy
 matplotlib
+scipy
+wave
