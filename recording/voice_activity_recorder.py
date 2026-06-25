@@ -2,6 +2,7 @@
 Record your voice from the moment you start speaking until you stop speaking for 3 seconds.
 Then it plays back.
 """
+
 import pyaudio
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,6 +44,7 @@ def record_with_vad():
             # Voice detection
             if peak > SILENCE_THRESHOLD and not is_recording:
                 is_recording = True
+                silence_counter = 0
                 audio_data = np.array([], dtype=np.int16)
                 print("\n🔴 Recording started...")
             
@@ -108,5 +110,7 @@ output = p.open(
     frames_per_buffer= CHUNK
 )
 
-data_out = np.chararray.tostring(audio.astype(np.int16))
-output.write(data_out)
+output.write(audio.tobytes())
+output.stop_stream()
+output.close()
+p.terminate()
