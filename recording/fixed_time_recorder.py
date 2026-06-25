@@ -26,7 +26,7 @@ stream = p.open(
 print ('Start Recording...')
 au = np.array([])
 for i in range (int(TIME_OF_RECORDING * SAMPLE_RATE/CHUNK)):
-    data = np.fromstring(stream.read(CHUNK), dtype= np.int16)
+    data = np.frombuffer(stream.read(CHUNK), dtype= np.int16)
     au = np.append(au, data)
 print ('END')
 
