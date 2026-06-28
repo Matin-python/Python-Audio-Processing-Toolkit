@@ -57,6 +57,7 @@ Installation
 1. Clone the repository
 
 git clone https://github.com/Matin-python/Python-Audio-Processing-Toolkit.git
+
 cd Python-Audio-Processing-Toolkit
 
 2. (Optional) Create a virtual environment
