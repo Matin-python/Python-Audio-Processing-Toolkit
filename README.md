@@ -37,8 +37,8 @@ Python-Audio-Processing-Toolkit/
 │   ├── fixed_time_recorder.py
 │   └── voice_activity_recorder.py
 │
-├── processing/
-│   └── voice_processing.py
+├── processing/ 
+│   └── voice_processing.py 
 │
 ├── realtime/
 │   ├── rtaa_amplitude.py
