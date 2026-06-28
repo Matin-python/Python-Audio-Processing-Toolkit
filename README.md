@@ -138,7 +138,8 @@ The toolkit can generate visualizations such as:
 - Live amplitude graph
 - Live frequency spectrum
 
-(Add screenshots inside the "images" folder and display them here.)
+###### Images will upload.
+
 
 ---
 
