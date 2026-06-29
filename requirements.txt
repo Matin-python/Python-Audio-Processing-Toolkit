@@ -2,4 +2,4 @@ PyAudio
 numpy
 matplotlib
 scipy
-wave
+# wave
