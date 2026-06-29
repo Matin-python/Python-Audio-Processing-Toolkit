@@ -141,7 +141,26 @@ The toolkit can generate visualizations such as:
 - Live amplitude graph
 - Live frequency spectrum
 
-###### Images will upload.
+
+voice_processing
+
+![voice_processing](images/voice_processing(1).png)
+![voice_processing](images/voice_processing(2).png)
+![voice_processing](images/voice_processing(3).png)
+
+RTAA
+
+![RTAA(Amp & Mag)](images/RTAA.png)
+
+fixed_time_recorder
+
+![fixed_time_recorder](images/fixed_time_recorder(1).png)
+![fixed_time_recorder](images/fixed_time_recorder(2).png)
+![fixed_time_recorder](images/fixed_time_recorder(3).png)
+
+voice_activity_recorder
+
+![voice_activity_recorder](images/voice_activity_recorder(1).png)
 
 
 ## Future Improvements
