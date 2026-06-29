@@ -88,13 +88,13 @@ pip install -r requirements.txt
 
 ## Modules
 
-### 1. Fixed-Time Audio Recorder
+### 1. Voice Processing
 
-Records audio for a specified duration, saves it as a WAV file, plays it back, and visualizes:
+Records audio and performs several signal-processing operations, including:
 
-- Waveform
-- Spectrogram
-- Frequency Spectrum (FFT)
+- Waveform plotting
+- Spectrogram generation
+- Fast Fourier Transform (FFT)
 
 
 ### 2. Voice Activity Recorder
@@ -111,13 +111,13 @@ Features:
 - Audio playback
 
 
-### 3. Voice Processing
+### 3. Fixed-Time Audio Recorder
 
-Records audio and performs several signal-processing operations, including:
+Records audio for a specified duration, saves it as a WAV file, plays it back, and visualizes:
 
-- Waveform plotting
-- Spectrogram generation
-- Fast Fourier Transform (FFT)
+- Waveform
+- Spectrogram
+- Frequency Spectrum (FFT)
 
 
 ### 4. Real-Time Audio Analyzer
@@ -144,9 +144,7 @@ The toolkit can generate visualizations such as:
 ###### Images will upload.
 
 
----
-
-Future Improvements
+## Future Improvements
 
 - Noise reduction
 - Audio filtering
