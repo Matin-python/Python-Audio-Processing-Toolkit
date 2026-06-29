@@ -1,10 +1,9 @@
-Python Audio Processing Toolkit
+# Python Audio Processing Toolkit
 
 A collection of Python projects demonstrating audio recording, playback, digital signal processing (DSP), and real-time audio visualization. This repository showcases how to capture audio from a microphone, analyze voice signals, visualize waveforms and frequency spectra, and build live audio analyzers using Python.
 
----
 
-Features
+## Features
 
 - Record audio for a fixed duration
 - Record audio using Voice Activity Detection (VAD)
@@ -17,9 +16,8 @@ Features
 - Real-time frequency spectrum analysis
 - Combined real-time amplitude and magnitude analyzer
 
----
 
-Technologies Used
+## Technologies Used
 
 - Python 3
 - PyAudio
@@ -27,15 +25,11 @@ Technologies Used
 - Matplotlib
 - SciPy
 
----
 
-Project Structure
+## Project Structure
 
+```text
 Python-Audio-Processing-Toolkit/
-│
-├── recording/
-│   ├── fixed_time_recorder.py
-│   └── voice_activity_recorder.py
 │
 ├── processing/ 
 │   └── voice_processing.py 
@@ -45,44 +39,56 @@ Python-Audio-Processing-Toolkit/
 │   ├── rtaa_magnitude.py
 │   └── rtaa_full.py
 │
+├── recording/
+│   ├── fixed_time_recorder.py
+│   └── voice_activity_recorder.py
+│
 ├── images/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
+```
 ---
 
-Installation
+## Installation
 
-1. Clone the repository
+### 1. Clone the repository
 
+``` bash
 git clone https://github.com/Matin-python/Python-Audio-Processing-Toolkit.git
-
 cd Python-Audio-Processing-Toolkit
+```
 
-2. (Optional) Create a virtual environment
+### 2. (Optional) Create a virtual environment
 
+``` bash 
 python -m venv venv
+```
 
 Activate it:
 
-Windows
+**Windows**
 
+``` bash
 venv\Scripts\activate
+```
 
-Linux/macOS
+**Linux/macOS**
 
+``` bash
 source venv/bin/activate
+```
 
-3. Install the required packages
+### 3. Install the required packages
 
+``` bash
 pip install -r requirements.txt
+```
 
----
 
-Modules
+## Modules
 
-1. Fixed-Time Audio Recorder
+### 1. Fixed-Time Audio Recorder
 
 Records audio for a specified duration, saves it as a WAV file, plays it back, and visualizes:
 
@@ -90,9 +96,8 @@ Records audio for a specified duration, saves it as a WAV file, plays it back, a
 - Spectrogram
 - Frequency Spectrum (FFT)
 
----
 
-2. Voice Activity Recorder
+### 2. Voice Activity Recorder
 
 Starts recording automatically when speech is detected and stops after several seconds of silence.
 
@@ -105,9 +110,8 @@ Features:
 - FFT analysis
 - Audio playback
 
----
 
-3. Voice Processing
+### 3. Voice Processing
 
 Records audio and performs several signal-processing operations, including:
 
@@ -115,9 +119,8 @@ Records audio and performs several signal-processing operations, including:
 - Spectrogram generation
 - Fast Fourier Transform (FFT)
 
----
 
-4. Real-Time Audio Analyzer
+### 4. Real-Time Audio Analyzer
 
 Includes three real-time visualization tools:
 
@@ -127,9 +130,8 @@ Includes three real-time visualization tools:
 
 The analyzer continuously captures audio from the microphone and updates the graphs in real time.
 
----
 
-Example Output
+## Example Output
 
 The toolkit can generate visualizations such as:
 
@@ -156,17 +158,13 @@ Future Improvements
 - Real-time audio effects
 - Audio classification using Machine Learning
 
----
-
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
----
+## Author
 
-Author
-
-Mohammad Reza Bakhshandeh
+**Mohammad Reza Bakhshandeh**
 
 Electrical Engineering (Electronics) Graduate
 
