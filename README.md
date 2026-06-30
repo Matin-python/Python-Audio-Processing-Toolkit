@@ -44,6 +44,15 @@ Python-Audio-Processing-Toolkit/
 │   └── voice_activity_recorder.py
 │
 ├── images/
+│   ├── voice_processing(1).png
+│   ├── voice_processing(2).png
+│   ├── voice_processing(3).png
+│   ├── RTAA.png
+│   ├── fixed_time_recorder(1).png
+│   ├── fixed_time_recorder(2).png
+│   ├── fixed_time_recorder(3).png
+│   └── voice_activity_recorder.png
+│
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -160,7 +169,7 @@ fixed_time_recorder
 
 voice_activity_recorder
 
-![voice_activity_recorder](images/voice_activity_recorder(1).png)
+![voice_activity_recorder](images/voice_activity_recorder.png)
 
 
 ## Future Improvements
